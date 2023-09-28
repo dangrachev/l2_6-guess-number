@@ -1,0 +1,122 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    overflow: hidden;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 35%;
+    height: 60%;
+    padding: 20px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+
+.guess-input {
+    width: 75px;
+    height: 75px;
+    margin: 20px 0;
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: darkorchid;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.guess-btn {
+    width: 140px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    margin-bottom: 15px;
+
+    border-radius: 6px;
+    background-color: darkorchid;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all .3s;
+}
+.guess-btn:active {
+    transform: scale(.9);
+}
+
+.new-game-btn {
+    border: none;
+
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.new-game-btn:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.choose-range-btn {
+    border: none;
+
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.choose-range-btn:hover {
+    color: darkorchid;
+    text-decoration: underline;
+}
+
+.tips {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.message {
+    font-size: 20px;
+    font-weight: normal;
+}
+.hint {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.attempts {
+    font-size: 20px;
+}
